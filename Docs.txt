@@ -4,3 +4,18 @@ Thực hiện đẩy code len
 2. git add -a tât ca
 3. git commit -m 'note'
 4. git push origin master
+
+
+CSS HEADER
+-------------------
+Cách xác định một thành phần
+Trả lời các câu hỏi sau:
+1. Vị trí
+2. Kích thước (width , height)
+3. Màu sắc
+4. Kiểu dáng
+
+Cách làm việc
+1. Từ ngoài vào trong
+2. Từ trên xuống dưới
+3. Từ tổng quan đến chi tiết
