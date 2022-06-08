@@ -19,3 +19,9 @@ Cách làm việc
 1. Từ ngoài vào trong
 2. Từ trên xuống dưới
 3. Từ tổng quan đến chi tiết
+
+
+
+
+*******
+Thuộc tình display : inline-block --> inline là trên 1 hàng, block là giữa lại tính chất khối
