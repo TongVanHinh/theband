@@ -25,3 +25,12 @@ Cách làm việc
 
 *******
 Thuộc tình display : inline-block --> inline là trên 1 hàng, block là giữa lại tính chất khối
+
+
+Xây dựng subnav
+-- CSS POSIOTON là kiến thức cần học để làm được subnav
+
+1. Liên quan đến hiện/ẩn thuộc tính: display;
+2. Để hiện thị ta dùng lớp giả sudo class: hover;
+3. Cho thẻ cha có thuộc tính POSIOTON - relative;
+4. Cho thẻ con có thuộc tính POSIOTON - absolute; cần đọc lại kỹ thuộc tính này

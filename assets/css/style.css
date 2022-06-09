@@ -20,30 +20,62 @@ html{
     background-color: #333;
 }
 
-#nav {
+#nav, .subnav {
+    list-style-type: none;
+}
 
+#nav > li{
+    display: inline-block;
 }
 
 #nav li {
-    display: inline-block;
+    /* display: inline-block; */
+    position: relative;
+}
+
+#nav > li > a {
+    /* Chọn thẻ con trực tiếp */
+    color: #ffffff;  /*Thêm màu chữ*/
+    text-transform: uppercase;
 }
 
 #nav li a {
-    color: #ffffff;  /*Thêm màu chữ*/
     text-decoration: none; /*Bỏ thuộc tính gạch chân mặc định*/
     line-height: 46px; /*Căn giữa theo chiều dọc*/
     padding: 0 24px;
-    display: inline-block;
+    display: block;
 }
 
-#nav li:hover a {
+#nav li:hover .subnav{
+    display: block;
+}
+
+#nav > li:hover > a {
     color: #000000;  /*Thêm màu chữ*/
     background-color: #ccc;
 }
 
 #nav .subnav {
     display: none;   /*Ẩn phần tử đi*/
+    min-width: 160px;
+    top: 100%;
+    left: 0;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
+
+#nav .subnav a {
+    color: #000000;
+    padding: 0 12px;
+}
+
+#nav .subnav li:hover a {
+    color: #000000;  /*Thêm màu chữ*/
+    background-color: #ccc;
+    line-height: 32px;
+}
+
 
 #slider {
 
