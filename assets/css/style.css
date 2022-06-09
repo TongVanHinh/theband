@@ -20,6 +20,10 @@ html{
     background-color: #333;
 }
 
+#nav {
+    display: inline-block;
+}
+
 #nav, .subnav {
     list-style-type: none;
 }
@@ -70,12 +74,32 @@ html{
     padding: 0 12px;
 }
 
+#nav .nav-arrow-down{
+    font-size: 14px;
+}
+
 #nav .subnav li:hover a {
     color: #000000;  /*Thêm màu chữ*/
     background-color: #ccc;
     line-height: 32px;
 }
 
+
+#header .search-btn{
+    float: right;
+    padding: 0 21px;
+}
+
+#header .search-btn:hover{
+    background-color: #f44336!important;
+    cursor: pointer;
+}
+
+#header .search-icon {
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+}
 
 #slider {
 
