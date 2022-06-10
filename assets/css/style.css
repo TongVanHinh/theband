@@ -22,6 +22,7 @@ html{
     right: 0;
     height: 46px;
     background-color: #333;
+    z-index: 1;
 }
 
 #nav {
@@ -106,8 +107,38 @@ html{
 }
 
 #slider {
+    position: relative;
     margin-top: 46px;
+    /* Khi thêm giá trị đăng sau là % paddinh top = 50%  thì giá trị x% là giá trị 50% chiều ngang của chính nó*/
+    padding-top: 50%;
+    background: url(/assets/img/chicago.jpg) top center / cover;
+    background-repeat: no-repeat;
 }
+
+#slider .text-content {
+    position: absolute;
+    color: #fff;
+    bottom: 48px;
+    /* Căn giữa với thuộc tính có positon */
+    /* Cách 1 */
+    left: 50%;
+    transform: translateX(-50%);
+    /* Cách 2: left: 0 và right = 0 */
+    /* Cách 3 width = 100% */
+    text-align: center;
+}
+
+#slider .text-heading {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+#slider .text-decription {
+    font-size: 15px;
+    margin-top: 25px;
+
+}
+
 
 #content {
 
