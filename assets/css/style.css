@@ -6,6 +6,7 @@
 }
 
 html{
+    scroll-behavior: smooth;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -20,6 +21,70 @@ html{
 .text-white {
     color: #fff !important;
 }
+
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-third {
+    width: calc(100% / 3);
+}
+
+
+.text-center{
+    text-align: center !important;
+}
+
+.mt-8{
+    margin-top: 8px !important;
+}
+
+.mt-16{
+    margin-top: 16px !important;
+}
+
+.pull-right{
+    float: right !important;
+}
+
+.btn {
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+    padding: 11px 16px;
+    display: inline-block;
+    margin-top: 18px;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
 
 /* Header */
 #header {
@@ -153,7 +218,7 @@ html{
 
 #content .content-section{
     width: 800px;
-    padding: 64px 0;
+    padding: 64px 0 110px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -191,8 +256,6 @@ html{
 }
 
 #content .member-item {
-    float: left;
-    width: calc(100% / 3);
     text-align: center;
 }
 
@@ -250,16 +313,8 @@ html{
 /* Place */
 .places-list {
     margin-top: 32px;
-    margin-left: -8px;
-    margin-right: -8px;
-    padding-bottom: 48px;
 }
 
-.place-item {
-    float: left;
-    width: calc(100%/3);
-    padding: 0 8px;
-}
 
 .place-img {
     width: 100%;
@@ -307,6 +362,69 @@ html{
     cursor: pointer;
 }
 
-#footer {
+/* Contact */
+.contact-content {
+    margin-top: 48px;
+}
 
+.contact-info {
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.contact-info i[class*="ti-"]{
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form {
+    font-size: 15px;
+}
+
+.contact-form .form-control{
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.fomr-submit-btn {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+    padding: 10px 16px;
+    float: right;
+}
+
+
+/* Mapsecsion */
+.map-section img{
+    width: 100%;
+}
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+#footer .social-list{
+    font-size: 24px;
+}
+
+#footer .social-list a{
+    color: #333;
+    text-decoration: none;
+}
+
+footer .social-list a:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+#footer .copyright{
+    margin-top: 15px;
+    color: #333;
+}
+
+#footer .copyright a{
+    text-decoration: none;
+    color: #333;
 }
