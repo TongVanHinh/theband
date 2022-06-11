@@ -34,3 +34,7 @@ Xây dựng subnav
 2. Để hiện thị ta dùng lớp giả sudo class: hover;
 3. Cho thẻ cha có thuộc tính POSIOTON - relative;
 4. Cho thẻ con có thuộc tính POSIOTON - absolute; cần đọc lại kỹ thuộc tính này
+
+
+-----------KỸ THUẬT MODAL----------------
+1. Modal cần có position = fixed
