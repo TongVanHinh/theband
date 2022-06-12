@@ -65,6 +65,10 @@ html{
     margin-top: 16px !important;
 }
 
+.mt-32 {
+    padding-top: 32px !important;
+}
+
 .pull-right{
     float: right !important;
 }
@@ -161,7 +165,14 @@ html{
     line-height: 32px;
 }
 
+#header .mobile-menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
 
+#header .mobile-menu-btn,
 #header .search-btn{
     float: right;
     padding: 0 21px;
@@ -172,6 +183,15 @@ html{
     cursor: pointer;
 }
 
+#header .mobile-menu-btn:hover{
+    background-color: #ccc;
+}
+
+#header .mobile-menu-btn:hover .mobile-menu-icon{
+    color: #000;
+}
+
+#header .mobile-menu-icon,
 #header .search-icon {
     color: #fff;
     font-size: 20px;
@@ -183,7 +203,7 @@ html{
     margin-top: 46px;
     /* Khi thêm giá trị đăng sau là % paddinh top = 50%  thì giá trị x% là giá trị 50% chiều ngang của chính nó*/
     padding-top: 50%;
-    background: url(/assets/img/chicago.jpg) top center / cover;
+    background: url(../img/chicago.jpg) top center / cover;
     background-repeat: no-repeat;
 }
 
@@ -208,7 +228,7 @@ html{
 #slider .text-decription {
     font-size: 15px;
     margin-top: 25px;
-
+    text-shadow: 0 0 1px #000;
 }
 
 
@@ -218,9 +238,12 @@ html{
 
 #content .content-section{
     width: 800px;
+    max-width: 100%;
     padding: 64px 0 110px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 #content .section-heading{
@@ -250,7 +273,7 @@ html{
 }
 
 #content .members-list{
-    margin-top: 48px;
+    margin-top: 32px;
     /* Để fig lỗi khi sử dụng thuộc tính float */
     /* overflow: hidden; */
 }
@@ -312,7 +335,7 @@ html{
 
 /* Place */
 .places-list {
-    margin-top: 32px;
+    margin-top: 16px;
 }
 
 
@@ -376,6 +399,16 @@ html{
     width: 30px;
     display: inline-block;
 }
+
+.contact-info a{
+    color: #101aef;
+    opacity: 0.8;
+}
+
+.contact-info a:hover{
+    opacity: 1;
+}
+
 
 .contact-form {
     font-size: 15px;
